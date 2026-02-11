@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { useAccount } from 'wagmi'
 import { ShoppingCart, Car, Briefcase } from 'lucide-react'
+import Checkout from './Checkout'
 
 interface Product {
   id: string
@@ -96,8 +97,8 @@ export default function Marketplace() {
   const { isConnected } = useAccount()
   const [cart, setCart] = useState<string[]>([])
   const [filter, setFilter] = useState<'all' | 'car' | 'bag'>('all')
-  const [loading, setLoading] = useState(false)
   const [success, setSuccess] = useState(false)
+  const [showCheckout, setShowCheckout] = useState(false)
 
   const filteredProducts = filter === 'all' 
     ? products 
@@ -125,27 +126,31 @@ export default function Marketplace() {
       return
     }
 
-    setLoading(true)
-    try {
-      // Simulate payment processing
-      await new Promise(resolve => setTimeout(resolve, 2000))
-      setSuccess(true)
-      setCart([])
-      setTimeout(() => setSuccess(false), 3000)
-    } catch (error) {
-      console.error('Checkout failed:', error)
-      alert('Checkout failed. Please try again.')
-    } finally {
-      setLoading(false)
-    }
+    // Show checkout flow instead of immediate purchase
+    setShowCheckout(true)
+  }
+
+  const handleCheckoutSuccess = () => {
+    setSuccess(true)
+    setCart([])
+    setShowCheckout(false)
+    setTimeout(() => setSuccess(false), 3000)
   }
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-12">
-      <h1 className="text-4xl font-bold mb-2">Marketplace</h1>
-      <p className="text-gray-400 mb-8">Browse and purchase cars and bags with your Tempo credit card</p>
+      {showCheckout ? (
+        <Checkout 
+          items={cartItems}
+          total={totalPrice}
+          onSuccess={handleCheckoutSuccess}
+        />
+      ) : (
+        <>
+          <h1 className="text-4xl font-bold mb-2">Marketplace</h1>
+          <p className="text-gray-400 mb-8">Browse and purchase cars and bags with your Tempo credit card</p>
 
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
         {/* Sidebar */}
         <div className="lg:col-span-1">
           <div className="bg-gray-800 rounded-xl p-6 sticky top-20">
@@ -199,14 +204,14 @@ export default function Marketplace() {
                     </div>
                     <button
                       onClick={handleCheckout}
-                      disabled={!isConnected || loading}
+                      disabled={!isConnected}
                       className={`w-full py-2 rounded-lg font-semibold transition ${
-                        isConnected && !loading
+                        isConnected
                           ? 'bg-blue-500 hover:bg-blue-600 text-white'
                           : 'bg-gray-700 text-gray-500 cursor-not-allowed'
                       }`}
                     >
-                      {loading ? 'Processing...' : 'Checkout'}
+                      Checkout
                     </button>
                   </div>
                 </>
@@ -277,7 +282,10 @@ export default function Marketplace() {
             ))}
           </div>
         </div>
-      </div>
+
+          </div>
+        </>
+      )}
     </div>
   )
 }
