@@ -13,19 +13,19 @@ export default function CreditCardPurchase() {
   const plans = {
     basic: {
       name: 'Basic Card',
-      price: '100',
+      price: '0.5',
       limit: '$1,000',
       features: ['Virtual Card', 'Online payments', 'Basic support'],
     },
     premium: {
       name: 'Premium Card',
-      price: '250',
+      price: '1',
       limit: '$5,000',
       features: ['Virtual Card', 'Offline payments', 'Priority support', 'Cashback'],
     },
     elite: {
       name: 'Elite Card',
-      price: '500',
+      price: '2',
       limit: '$25,000',
       features: ['Physical + Virtual', 'VIP concierge', 'Premium support', '2% Cashback'],
     },
