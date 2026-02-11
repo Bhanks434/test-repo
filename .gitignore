@@ -8,7 +8,7 @@
 
 # next.js
 /.next/
-/out/
+# /out/  - UNCOMMENTED: needed for GitHub Pages deployment
 
 # production
 /build
