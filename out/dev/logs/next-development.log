@@ -1,0 +1,251 @@
+[00:00:03.199] Server  LOG     ✓ Ready in 2.5s
+[00:00:11.566] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:11.732] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <link>
+    <script>
+    <script>
+    <script>
+    <ClientSegmentRoot Component={function RootLayout} slots={{...}} serverProvidedParams={{params:{}, ...}}>
+      <RootLayout params={Promise}>
+        <html lang="en">
+          <head>
+          <body>
+            <WagmiConfig>
+              <QueryClientProvider client={{}}>
+                <WagmiProvider config={{chains:[...], ...}}>
+                  <Hydrate config={{chains:[...], ...}}>
+                    <Header>
+                      <header className="sticky top...">
+                        <nav className="max-w-7xl ...">
+                          <div>
+                          <div className="flex items...">
++                           <span className="text-sm text-gray-400">
+-                           <button className="px-4 py-2 bg-blue-500 hover:bg-blue-600 rounded-lg transition">
+                            ...
+                          ...
+                    ...
+
+[00:00:16.795] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:00:33.098] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:17.885] Server  ERROR   ⨯ ./Desktop/Tempo/src/app/layout.tsx:3:1
+Module not found: Can't resolve '@/components/RootLayoutClient'
+  1 | import './globals.css'
+  2 | import { ReactNode } from 'react'
+> 3 | import RootLayoutClient from '@/components/RootLayoutClient'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export const metadata = {
+  6 |   title: 'Tempo Payment App',
+
+Import map: aliased to relative './src/components/RootLayoutClient' inside of [project]/Desktop/Tempo
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:02:17.886] Server  ERROR   ⨯ ./Desktop/Tempo/src/app/layout.tsx:3:1
+Module not found: Can't resolve '@/components/RootLayoutClient'
+  1 | import './globals.css'
+  2 | import { ReactNode } from 'react'
+> 3 | import RootLayoutClient from '@/components/RootLayoutClient'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export const metadata = {
+  6 |   title: 'Tempo Payment App',
+
+Import map: aliased to relative './src/components/RootLayoutClient' inside of [project]/Desktop/Tempo
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:02:17.891] Server  ERROR   ⨯ ./Desktop/Tempo/src/app/layout.tsx:3:1
+Module not found: Can't resolve '@/components/RootLayoutClient'
+  1 | import './globals.css'
+  2 | import { ReactNode } from 'react'
+> 3 | import RootLayoutClient from '@/components/RootLayoutClient'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export const metadata = {
+  6 |   title: 'Tempo Payment App',
+
+Import map: aliased to relative './src/components/RootLayoutClient' inside of [project]/Desktop/Tempo
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:02:17.891] Server  ERROR   ⨯ ./Desktop/Tempo/src/app/layout.tsx:3:1
+Module not found: Can't resolve '@/components/RootLayoutClient'
+  1 | import './globals.css'
+  2 | import { ReactNode } from 'react'
+> 3 | import RootLayoutClient from '@/components/RootLayoutClient'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export const metadata = {
+  6 |   title: 'Tempo Payment App',
+
+Import map: aliased to relative './src/components/RootLayoutClient' inside of [project]/Desktop/Tempo
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:02:17.893] Server  ERROR   ⨯ ./Desktop/Tempo/src/app/layout.tsx:3:1
+Module not found: Can't resolve '@/components/RootLayoutClient'
+  1 | import './globals.css'
+  2 | import { ReactNode } from 'react'
+> 3 | import RootLayoutClient from '@/components/RootLayoutClient'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export const metadata = {
+  6 |   title: 'Tempo Payment App',
+
+Import map: aliased to relative './src/components/RootLayoutClient' inside of [project]/Desktop/Tempo
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:02:17.894] Server  ERROR   ⨯ ./Desktop/Tempo/src/app/layout.tsx:3:1
+Module not found: Can't resolve '@/components/RootLayoutClient'
+  1 | import './globals.css'
+  2 | import { ReactNode } from 'react'
+> 3 | import RootLayoutClient from '@/components/RootLayoutClient'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export const metadata = {
+  6 |   title: 'Tempo Payment App',
+
+Import map: aliased to relative './src/components/RootLayoutClient' inside of [project]/Desktop/Tempo
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:02:17.895] Server  ERROR   ⨯ ./Desktop/Tempo/src/app/layout.tsx:3:1
+Module not found: Can't resolve '@/components/RootLayoutClient'
+  1 | import './globals.css'
+  2 | import { ReactNode } from 'react'
+> 3 | import RootLayoutClient from '@/components/RootLayoutClient'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export const metadata = {
+  6 |   title: 'Tempo Payment App',
+
+Import map: aliased to relative './src/components/RootLayoutClient' inside of [project]/Desktop/Tempo
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:02:17.896] Server  ERROR   ⨯ ./Desktop/Tempo/src/app/layout.tsx:3:1
+Module not found: Can't resolve '@/components/RootLayoutClient'
+  1 | import './globals.css'
+  2 | import { ReactNode } from 'react'
+> 3 | import RootLayoutClient from '@/components/RootLayoutClient'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export const metadata = {
+  6 |   title: 'Tempo Payment App',
+
+Import map: aliased to relative './src/components/RootLayoutClient' inside of [project]/Desktop/Tempo
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:02:17.898] Server  ERROR   ⨯ ./Desktop/Tempo/src/app/layout.tsx:3:1
+Module not found: Can't resolve '@/components/RootLayoutClient'
+  1 | import './globals.css'
+  2 | import { ReactNode } from 'react'
+> 3 | import RootLayoutClient from '@/components/RootLayoutClient'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export const metadata = {
+  6 |   title: 'Tempo Payment App',
+
+Import map: aliased to relative './src/components/RootLayoutClient' inside of [project]/Desktop/Tempo
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:02:17.898] Server  ERROR   ⨯ ./Desktop/Tempo/src/app/layout.tsx:3:1
+Module not found: Can't resolve '@/components/RootLayoutClient'
+  1 | import './globals.css'
+  2 | import { ReactNode } from 'react'
+> 3 | import RootLayoutClient from '@/components/RootLayoutClient'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export const metadata = {
+  6 |   title: 'Tempo Payment App',
+
+Import map: aliased to relative './src/components/RootLayoutClient' inside of [project]/Desktop/Tempo
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:02:17.928] Server  ERROR   ⨯ ./Desktop/Tempo/src/app/layout.tsx:3:1
+Module not found: Can't resolve '@/components/RootLayoutClient'
+  1 | import './globals.css'
+  2 | import { ReactNode } from 'react'
+> 3 | import RootLayoutClient from '@/components/RootLayoutClient'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export const metadata = {
+  6 |   title: 'Tempo Payment App',
+
+Import map: aliased to relative './src/components/RootLayoutClient' inside of [project]/Desktop/Tempo
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:02:17.929] Server  ERROR   ⨯ ./Desktop/Tempo/src/app/layout.tsx:3:1
+Module not found: Can't resolve '@/components/RootLayoutClient'
+  1 | import './globals.css'
+  2 | import { ReactNode } from 'react'
+> 3 | import RootLayoutClient from '@/components/RootLayoutClient'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export const metadata = {
+  6 |   title: 'Tempo Payment App',
+
+Import map: aliased to relative './src/components/RootLayoutClient' inside of [project]/Desktop/Tempo
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:02:17.961] Server  LOG     ✓ Compiled in 171ms
+[00:02:18.067] Browser ERROR   ./Desktop/Tempo/src/app/layout.tsx:3:1
+Module not found: Can't resolve '@/components/RootLayoutClient'
+  1 | import './globals.css'
+  2 | import { ReactNode } from 'react'
+> 3 | import RootLayoutClient from '@/components/RootLayoutClient'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export const metadata = {
+  6 |   title: 'Tempo Payment App',
+
+Import map: aliased to relative './src/components/RootLayoutClient' inside of [project]/Desktop/Tempo
+
+https://nextjs.org/docs/messages/module-not-found
+[00:02:21.860] Server  LOG     ✓ Compiled in 241ms
+[00:02:22.515] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:22.661] Browser LOG     Adding midenWallet to window
+[00:02:29.069] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

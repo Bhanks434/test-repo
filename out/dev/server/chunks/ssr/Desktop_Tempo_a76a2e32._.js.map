@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":""}},
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/user/Desktop/Tempo/src/app/layout.tsx"],"sourcesContent":["import './globals.css'\nimport { ReactNode } from 'react'\nimport RootLayoutClient from '@/components/RootLayoutClient'\n\nexport const metadata = {\n  title: 'Tempo Payment App',\n  description: 'Purchase and load credit cards with Tempo testnet tokens',\n}\n\nexport default function RootLayout({\n  children,\n}: {\n  children: ReactNode\n}) {\n  return (\n    <html lang=\"en\">\n      <head>\n      </head>\n      <body>\n        <RootLayoutClient>\n          {children}\n        </RootLayoutClient>\n      </body>\n    </html>\n  )\n}\n"],"names":[],"mappings":";;;;;;;AAEA;;;;AAEO,MAAM,WAAW;IACtB,OAAO;IACP,aAAa;AACf;AAEe,SAAS,WAAW,EACjC,QAAQ,EAGT;IACC,qBACE,kQAAC;QAAK,MAAK;;0BACT,kQAAC;;;;;0BAED,kQAAC;0BACC,cAAA,kQAAC,qKAAgB;8BACd;;;;;;;;;;;;;;;;;AAKX"}},
+    {"offset": {"line": 55, "column": 0}, "map": {"version":3,"sources":["file:///Users/user/Desktop/Tempo/node_modules/next/src/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.ts"],"sourcesContent":["module.exports = (\n  require('../../module.compiled') as typeof import('../../module.compiled')\n).vendored['react-rsc']!.ReactJsxDevRuntime\n"],"names":["module","exports","require","vendored","ReactJsxDevRuntime"],"mappings":"AAAAA,OAAOC,OAAO,GACZC,QAAQ,0IACRC,QAAQ,CAAC,YAAY,CAAEC,kBAAkB","ignoreList":[0]}}]
+}
